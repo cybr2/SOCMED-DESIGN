@@ -12,9 +12,19 @@ html{
 }
 
 body{
+    display: grid;
+    justify-content: center;
     padding: 0;
     margin: 0;
     font-family:u.$font;
-    background-color:var(--background-color);
+    background-color:var(--background);
     color: var(--text-color);
+}
+.visually-hidden{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }

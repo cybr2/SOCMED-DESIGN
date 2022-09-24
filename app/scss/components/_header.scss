@@ -1,0 +1,42 @@
+@use '../util/' as u;
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin:u.rem(36) 0 u.rem(46) 0;
+    padding: 0 u.rem(25);
+    
+
+    @include u.breakpoints-up(medium){
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // &__title{
+    //     width: 100%;
+
+    //     @include u.breakpoints-up(medium){
+    //         width: auto;
+    //     }
+
+    // }
+
+    // &__subtitle{
+    //     font-size: u.rem(14);
+    //     font-weight: 700;
+    //     color: var(--text-color2);
+    //     padding: 0 u.rem(25);
+    // }
+
+}
+
+.containers{
+    padding: 0;
+}
+
+h2{
+    padding: 0 u.rem(25);
+}
